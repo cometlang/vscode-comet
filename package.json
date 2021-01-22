@@ -1,0 +1,25 @@
+{
+    "name": "vscode-comet",
+    "displayName": "vscode-comet",
+    "description": "Comet language syntax support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "comet",
+            "aliases": ["Comet", "comet"],
+            "extensions": [".cmt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "comet",
+            "scopeName": "source.comet",
+            "path": "./syntaxes/comet.tmLanguage.json"
+        }]
+    }
+}
