@@ -4,7 +4,7 @@
     "description": "Comet language syntax support",
     "publisher": "Cometlang",
     "repository": "https://github.com/comet/vscode-comet",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.52.0"
     },
