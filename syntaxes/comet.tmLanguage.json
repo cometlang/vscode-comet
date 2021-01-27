@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.comet",
-					"match": "\\b(if|else|while|for|return|and|or|try|catch|throw|operator|instanceof)\\b"
+					"match": "\\b(as|class|if|import|in|else|enum|while|for|function|return|try|catch|finally|throw|operator|instanceof|static)\\b"
 				},
 				{
 					"name": "constant.language.nil.comet",
@@ -41,7 +41,7 @@
 				},
 				{
 					"name": "support.function.builtin.comet",
-					"match": "\\b(print)\\b"
+					"match": "\\b(print|clock)\\b"
 				},
 				{
 					"name": "variable.language.self.comet",
@@ -113,10 +113,15 @@
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.comet",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": []
+			"patterns": [{
+				"name": "string.quoted.double.comet",
+				"begin": "\"",
+				"end": "\""
+			}, {
+				"name": "string.quoted.single.comet",
+				"begin": "'",
+				"end": "'"
+			}]
 		},
 		"digits": {
 			"patterns": [
