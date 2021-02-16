@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.comet",
-					"match": "\\b(as|class|if|import|in|else|enum|while|for|function|return|try|catch|finally|throw|operator|instanceof|static)\\b"
+					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|function|import|in|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next|)\\b"
 				},
 				{
 					"name": "constant.language.nil.comet",
@@ -67,7 +67,7 @@
 					}
 				},
 				{
-					"match": "\\b(function)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(([A-Za-z0-9,\\s]*)\\)",
+					"match": "\\b(function)\\s+([A-Za-z_][A-Za-z0-9_]*(?:!|\\?)?)\\s*\\(([A-Za-z0-9,\\s]*)\\)",
 					"captures": {
 						"1": {
 							"name":"storage.type.function.comet"
@@ -127,7 +127,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.comet",
-					"match": "\\b[0-9]+(?:.[0-9]+)?\\b"
+					"match": "\\b(?:[0-9]+_?)+(?:.(?:[0-9]+_?)+)?\\b"
 				}
 			]
 		},
