@@ -3,10 +3,10 @@
 	"name": "Comet",
 	"patterns": [
 		{
-			"include": "#comments"
+			"include": "#keywords"
 		},
 		{
-			"include": "#keywords"
+			"include": "#comments"
 		},
 		{
 			"include": "#statements"
@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.comet",
-					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|function|import|in|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next|)\\b"
+					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|function|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next)\\b"
 				},
 				{
 					"name": "constant.language.nil.comet",
@@ -41,7 +41,7 @@
 				},
 				{
 					"name": "support.function.builtin.comet",
-					"match": "\\b(print|clock)\\b"
+					"match": "\\b(print|clock|assert|callable\\?)\\b"
 				},
 				{
 					"name": "variable.language.self.comet",
@@ -107,7 +107,7 @@
 		"callables": {
 			"patterns": [
 				{
-					"match": "([A-Za-z_][A-Za-z0-9_]*(!|\\?)?)\\(",
+					"match": "([A-Za-z_][A-Za-z0-9_]*(?:!|\\?)?)\\(",
 					"name": "support.function.comet"
 				}
 			]
@@ -127,7 +127,11 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.comet",
-					"match": "\\b(?:[0-9]+_?)+(?:.(?:[0-9]+_?)+)?\\b"
+					"match": "\\b[0-9_]+(?:.[0-9_]+)?\\b"
+				},
+				{
+					"name": "constant.hexadecimal.comet",
+					"match": "\\b0x[0-9a-fA-F_]+\\b"
 				}
 			]
 		},
@@ -135,7 +139,7 @@
 			"patterns": [
 				{
 					"name": "variable.other.readwrite.comet",
-					"match": "\\b[A-Za-z_][A-Za-z0-9_]*(!|\\?)?\\b"
+					"match": "\\b[A-Za-z_][A-Za-z0-9_]*(?:!|\\?)?\\b"
 				}
 			]
 		},
