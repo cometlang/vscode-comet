@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.comet",
-					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|function|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next)\\b"
+					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next)\\b"
 				},
 				{
 					"name": "constant.language.nil.comet",
@@ -41,7 +41,7 @@
 				},
 				{
 					"name": "support.function.builtin.comet",
-					"match": "\\b(print|clock|assert|callable\\?)\\b"
+					"match": "\\b(print|clock|assert|callable\\?|sleep|exit)\\b"
 				},
 				{
 					"name": "variable.language.self.comet",

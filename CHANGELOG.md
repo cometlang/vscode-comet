@@ -1,9 +1,16 @@
 # Change Log
 
-All notable changes to the "vscode-comet" extension will be documented in this file.
+## [v0.2.2]
+- Shift function back to function definition, not a keyword
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [v0.2.1]
+- Fixed a bug where keywords were the only thing being detected
 
-## [Unreleased]
+## [v0.2.0]
+- Added fancy loop stuff, like foreach, in, next keywords
 
-- Initial release
+## [v0.1.0]
+- Added single-quote string, exception handling keywords
+
+## [v0.0.1]
+- Initial release - based off the lox version with some minor tweaks that were obvious
