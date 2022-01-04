@@ -12,7 +12,7 @@ It can't tell the difference between `nil` the keyword and `nil?` the function, 
 
 ## Release Notes
 
-Initial release with basic highlighting support
+Basic syntax highlight support for the Comet programming language
 
 ### 1.0.0
 

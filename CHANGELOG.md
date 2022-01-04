@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.3.0]
+- Add the break keyword
+
 ## [v0.2.2]
 - Shift function back to function definition, not a keyword
 

@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.comet",
-					"match": "\\b(as|class|if|import|in|else|enum|while|for|foreach|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next)\\b"
+					"match": "\\b(as|break|class|if|import|in|else|enum|while|for|foreach|rethrow|return|try|catch|finally|throw|operator|instanceof|static|next)\\b"
 				},
 				{
 					"name": "constant.language.nil.comet",
