@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.4.0]
+- Rename instanceof to is
+
 ## [v0.3.0]
 - Add the break keyword
 
